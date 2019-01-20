@@ -1,0 +1,645 @@
+body /* Fundo da página */
+{
+	font-family: arial;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	/*border: 1px solid blue;*/
+	/*height: 620px;*/
+}
+
+#wallpaper1
+{
+	width: 100%;
+	height: 200px;
+	background-color: #20B2AA;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	box-shadow: -1px -1px 1px #20B2AA, 1px 1px 1px #20B2AA;
+}
+
+#wallpaper2
+{
+	width: 100%;
+	height: 1000px;
+	background-color: #E6E6E6;
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	left: 0;
+}
+
+/*2 - DIVS CONTEUDO -------------------------------------------------------------------------------------------*/
+
+#mae /* Div que engloba mensagem, conversas e chat*/
+{
+	/*border: 2px solid red;*/
+	width: 88%;
+	/*height: 90%;*/
+	margin-top: 2%;
+	margin-left: 6%;
+	margin-right: 6%;
+	margin-bottom: 2%;
+	box-shadow: -1px -1px 3px #000, 1px 1px 2px #000;
+	display: table;
+	border-radius: 5px;
+	background-color: #BDBDBD;
+	z-index: 1;
+}
+
+#conteudo1 /* Engloba as conversas, cabeçalho e pesquisa */
+{
+	float: left;
+	width: 33%;
+	display: table;
+}
+
+#conteudo2 /* Engloba o chat e a área de mensagem */
+{
+	float: right;
+	width: 67%;
+	display: table;
+}
+
+/*3 - PÁGINA INICIAL ---------------------------------------------------------------------------------------------*/
+
+img.inicio
+{
+	/*border: 1px solid black;*/
+	margin-top: 2%;
+	margin-left: 10%;
+}
+
+#menu
+{
+	/*border: 1px solid black;*/
+	width: 90%;
+	height: 20%;
+	margin-left: 9%;
+	margin-top: 1%;
+}
+
+#iconemenu
+{
+	/*border: 1px solid black;*/
+	width: 13%;
+	height: 100%;
+	float: left;
+	margin-left: 2%;
+}
+
+#fotomenu
+{
+	width: 50%;
+	height: 50%;
+	border: 1px solid #D8D8D8;
+	box-shadow: -1px 1px 1px #000;
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+	padding: 25%;
+	background-color: #F5F5F5;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+/*4 - CABEÇALHO -----------------------------------------------------------------------------------------------------*/
+
+#cabecalho
+{
+	float: left; 
+	width: 100%;
+	height: 60px;
+	border-top-left-radius: 5px;
+	background-color: #48D1CC;
+}
+
+#fotousuario
+{
+	/*border: 1px solid black;*/
+	width: 20%;	
+	height: 58px;
+	float: left;
+}
+
+#nomestatususuario
+{
+	/*border: 1px solid black;*/
+	width: 49%;
+	height: 58px;
+	float: left;
+	margin-left: 1%
+}
+
+#nomeusuario
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 35%;
+	float: left;
+	padding-top: 12px;
+	margin-left: 0%;
+}
+
+#statususuario
+{
+	/*border: 1px solid blue;*/
+	width: 100%;
+	height: 20px;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: white;
+	font-size: 13px;
+	margin-top: 0px;
+}
+
+#icones
+{
+	/*border: 1px solid black;*/
+	width: 28%;	
+	height: 38px;
+	float: left;
+	padding-top: 5px;
+	text-align: right;
+}
+
+/* 5 - PESQUISA -----------------------------------------------------------------------------------------------------*/
+	
+#pesquisa
+{
+	width: 100%;
+	height: 45px;
+	float: left; 
+	background-color: #AFEEEE;
+}
+
+#pesquisar
+{
+	border: none;
+	width: 75%;
+	height: 10px;
+	float: left;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-family: arial;
+	resize: none;
+	padding: 10px;
+	outline: none;
+	margin-top: 7px;
+}
+
+#pesqicon
+{
+	width: 10%;
+	height: 30px;
+	float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: white;
+	margin-left: 5%;
+	margin-top: 7px;
+	background-image: url("./imagens/search.png");
+	background-position: center;
+	background-size: 50% auto;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+/* 6 - LISTA DE AMIGOS ----------------------------------------------------------------------------------------------*/
+
+#conversas /* Janela onde estão todas as divs pessoa*/
+{
+	/*border: 2px solid black;*/
+	width: 100%;
+	height: 480px;
+	float: left; 
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: #AFEEEE;
+	border-bottom-left-radius: 5px;
+	box-shadow: 0px 0px 1px #000;
+}
+
+#pessoa /* Div para cada amigo carregado*/
+{
+	width: auto;
+	height: 60px; 
+	/*padding-left: 10px;*/
+	cursor: pointer;
+	/*padding-top: 20px;*/
+	background-color: #F5F5F5;
+	box-shadow: 0px 0px 1px #000;
+}
+
+#fotopessoa
+{
+	/*border: 1px solid black;*/
+	width: 20%;
+	height: 58px;
+	float: left;
+}
+
+#fotoredonda
+{
+	border: 1px solid #D8D8D8;
+	width: 35%;
+	box-shadow: -1px 1px 1px #000;
+	height: 24px;
+	-moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+	padding: 12px;
+	margin-left: 10px;
+	margin-top: 5px;
+	background-color: white;
+	background-position: center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+#nomepessoa
+{
+	/*border: 1px solid red;*/
+	width: 95%;
+	height: 40%;
+	float: left;
+	margin-top: 10px;
+	text-overflow: ellipsis;
+}
+
+#nomestatuspessoa
+{
+	/*border: 1px solid black;*/
+	width: 62%;
+	float: left;
+	margin-left: 5px;
+}
+
+#statuspessoa
+{
+	/*border: 1px solid blue;*/
+	width: 95%;
+	height: 20px;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: grey;
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+#conexaopessoa
+{
+	/*border: 1px solid black;*/
+	width: 15%;
+	height: 38px;
+	float: left;
+	padding-top: 20px;
+	text-align: right;
+}
+
+/*7 - TOPO CONVERSA ----------------------------------------------------------------------------------------------*/
+
+#nomeconversa
+{
+	float: left; 
+	width: 100%;
+	height: 60px;
+	background-color: #48D1CC;
+	border-top-right-radius: 5px;
+	/*box-shadow: 0px 0px 1px #000;*/
+}
+
+#fotousuario.nomeconversa
+{
+	width: 10%;
+	margin-left: 1%;
+}
+
+#nomestatususuario.nomeconversa
+{
+	width: 70%;
+}
+
+#icones.nomeconversa
+{
+	/*border: 1px solid black;*/
+	width: 16%;
+	height: 33px;
+	padding-top: 10px;
+}
+
+/*8 - DIGITAR MSG ------------------------------------------------------------------------------------------------*/
+
+#mensagem /* Campo de digitação de mensagem*/
+{
+	/*border: 2px solid black; */
+	width: 100%;
+	height: 46px;
+	float: left;
+	padding-top: 9px;
+	background-color: #48D1CC;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0px 0px 1px #000;
+}
+
+#digitar /* Campo de texto de digitação*/
+{
+	width: 80%;
+	height: 15px;
+	float: left;
+	border-radius: 5px;
+	font-family: arial;
+	resize: none;
+	padding: 10px;
+	outline: none;
+	border: none;
+}
+
+#emoji
+{
+	width: 8%;
+	height: 44px;
+	float: left;
+	padding-top: 2px;
+}
+
+#enviarmsg
+{
+	width: 8%;
+	height: 44px;
+	float: left;
+	padding-top: 2px;
+}
+
+/*9 - CHAT -----------------------------------------------------------------------------------------------------*/
+
+#chat 
+{	
+	/*border: 2px solid black; */
+	width: auto;
+	height: 450px; 
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 10px;
+	background-color: #E0FFFF;
+}
+
+#alinhador1 /* Alinha as mensagens do usuário*/
+{
+	/*border: 1px solid black;*/
+	width: 60%;
+	float: right;
+	margin-right: 5%;
+}
+
+#alinhador2 /* Alinha das mensagens da outra pessoa*/
+{
+	/*border: 1px solid black;*/
+	width: 60%;
+	float: left;
+	margin-left: 5%;
+}
+
+#eu /* Balão do Usuário*/
+{
+	/*border: 1px solid #BDBDBD;*/
+	max-width: 250px;
+	height: auto;
+	float: right;
+	text-align: left;
+	border-radius: 4px;
+	padding: 4px;
+	background-color: #AFEEEE;
+	margin: 2px;
+	word-wrap: break-word;
+	box-shadow: 1px 1px 1px #BDBDBD;
+}
+
+#ele /* Balão da pessoa com quem se conversa*/
+{
+	border: 1px solid #BDBDBD;
+	max-width: 250px;
+	height: auto;
+	float: left;
+	text-align: left;
+	border-radius: 4px;
+	padding: 4px;
+	background-color: white;
+	margin: 2px;
+	word-wrap: break-word;
+	box-shadow: -1px 1px 1px #BDBDBD;
+}
+
+#espacoEntreMsg /* Espaço maior entre a msg do usuário e da pessoa*/
+{
+	margin: 10px;
+	float: left;
+}
+
+/* 10 - POPUPS -----------------------------------------------------------------------------------------------------*/
+
+#fundoescuro
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: black;
+	-moz-opacity:0.8;
+	-khtml-opacity:0.8;
+	opacity:0.8;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#popup
+{
+	border: 1px solid #20B2AA;
+	position: absolute;
+	
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	top: 0;
+	left: 0;
+	box-shadow: -1px -1px 3px #000, 1px 1px 2px #000;
+	display: none;
+	
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	/* Tamanhos definidos no HTML */
+}
+
+#fechar
+{
+	/*border: 1px solid red;*/
+	width: 15px;
+	height: 15px;
+	float: right;
+	background-color: #F5F5F5;
+	background-position: center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url("./imagens/close.png");
+	cursor: pointer;
+}
+
+#titulopop
+{
+	width: 90%;
+	/*height: 5%;*/
+	background-color: #20B2AA;
+	border-radius: 10px;
+	margin-top: 5%;
+	margin-left: 5%;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px #000;
+	font-weight: bold;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+/*11 - EDITAR PERFIL ------------------------------------------------------------------------------------------------*/
+
+#editarperfil
+{
+	color: #20B2AA;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+#editarperfil input
+{
+	width: 90%;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	box-shadow: -1px 1px 1px #000;
+	padding-left: 3%;
+}
+
+#editarperfil input.uploadfoto
+{
+	padding-left: 0%;
+}
+
+#editarperfil input.aviso
+{
+	width: 40%;
+	background-color: #F5F5F5;
+	box-shadow: none;
+	color: red;
+}
+
+#editarperfil input.formbutton
+{
+	width: 40%;
+	height: 40px;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	box-shadow: -1px 1px 1px #000;
+	background-color: #20B2AA;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px #000;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 3%;
+	margin-bottom: 3%;
+}
+
+/*12 - BUSCAR AMIGOS --------------------------------------------------------------------------------------------------*/
+
+#buscarAmigos
+{
+	border: none;
+	width: 57%;
+	height: 10px;
+	float: left;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-family: arial;
+	resize: none;
+	padding: 10px;
+	outline: none;
+	margin-top: 7px;
+}
+
+#buscarPor
+{
+	border: none;
+	height: 30px;
+	float: left;
+	outline: none;
+	font-family: arial;
+	margin-top: 7px;
+	border-radius: 5px;
+	margin-left: 2%;
+}
+
+#carregarPessoas
+{
+	/*border: 1px solid black;*/
+	width: 91%;
+	margin-top: 15%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin-left: 5%;
+	margin-bottom: 20px;
+}
+
+#conexaopessoa.add
+{
+	padding-top: 15px;
+}
+
+/*13 - SOLICITAÇÕES --------------------------------------------------------------------------------------------------*/
+
+#carregarSolicitacoes
+{
+	/*border: 1px solid black;*/
+	width: 91%;
+	margin-top: 5%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin-left: 5%;
+	margin-bottom: 20px;
+}
+
+#nomestatuspessoa.solicitacao
+{
+	width: 57%;
+}
+
+#conexaopessoa.solicitacao
+{
+	padding-top: 15px;
+	width: 20%;
+}
+
+/*13 - SAIR -------------------------------------------------------------------------------------------------------------*/
+
+#botao
+{
+	float: left;
+	width: 30%;
+	height: 20px;
+	padding-top: 5px;
+	background-color: #20B2AA;
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	box-shadow: -1px 1px 1px #000;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 5%;
+	margin-bottom: 3%;
+	margin-top: 7%;
+}

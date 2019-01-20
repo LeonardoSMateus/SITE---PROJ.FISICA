@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- BS Import -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Carlos"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/scrolling-nav.css" rel="stylesheet">
+	<title>Carlos Vinicius R Gonçalves</title>
+	<link rel= "stylesheet" type= "text/css" href= "estilo.css" />
+</head>	
+<body data-spy="scroll" data-target=".navbar" >
+	
+	<nav class="navbar navbar-fixed-top  navbar-inverse" role="navigation" id="#menuver">
+		<a class="navbar-brand page-scroll" href="#page-top"><img src="" height="60px"></a>
+		<div class="container">
+			<div class="navbar-header page-scroll"  >
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav" >
+					<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+					<li id="#menuver"><a href="#menu1" ><div id="botao">HOME</div></a></li>
+					<li><a href="#menu2" ><div id="botao">PERFIL</div></a></li>
+					<li><a href="#menu3" ><div id="botao">TRABALHOS</div></a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	  
+			<iframe src="slides.html" id="frame_slides" ></iframe>
+			
+			<section id="menu1" >
+				<div class="container">
+					
+					<div id="titulo">Um pouco sobre mim.</div>
+						<div id="conteudo">
+						xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </br>
+					xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx estudo em Cornélio Procópio Engenhara de Computação.
+						</div>
+						
+			   </section>
+			<section id="menu2" >
+					<div class="container">
+					<div id="titulo">Perfil</div>
+					
+					<!--width=60 height=40-->
+						<div id="box2">
+						<img style="width: 90%; height: 380px;"id="img_utf" src="./imagens/IMG_7539.jpg" alt=""> 
+						</div>
+						<div id="box3">
+					
+					<b>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</b><br/><br/>
+					<b>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</b><br/>
+					xxxxxxxxxxxxxx Web<br/>
+					Computação em java<br/>
+					Inteligência Artificial<br/>
+					<b>IDIOMAS</b><br/>
+Português – Nativo<br/>
+Inglês – Intermediário<br/>
+
+<b>FORMAÇÃO</b><br/>
+xxxxxxxxxxxxxxxxxxxxxxxxx <br/>
+xxxxxxxxxxxxxxxxxxxxxxxxxx<br/>
+						</div>
+						
+					
+					</div>
+				</section>
+				<section id="menu3" >
+					<div class="container">
+					<div id="titulo">Trabalhos</div>
+				
+						<div id="box5">
+						Unect-jr. Atualmente</br>
+						Empresa: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Período: 23/03/2014/ 23/04/2015</br>
+						</div>
+				</section>
+
+		<nav class="navbar navbar-inverse " id="rodape_topo">
+		<ul class="nav navbar-nav navbar-center">
+			
+	</nav>
+</div>
+	<script type="text/javascript">    
+		$(document).ready(function() 
+		{       
+			$('#subir').click(function()
+			{          
+				$('html, body').animate({scrollTop:0}, 'slow');      
+				return false;        
+			});     
+		});
+	</script>
+	<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+</html>
+
+<script>
+	function exibirDiv(botao) // Exibe divs escondidas
+	{
+		botao.firstChild.style.visibility = "visible";
+	}
+	
+	function esconderDiv(botao) // Exibe divs escondidas
+	{
+		botao.firstChild.style.visibility = "hidden";
+	}
+	
+	function aparecer()
+	{
+		$( window ).scroll(function() {
+			nScrollPosition = $( window ).scrollTop();
+			if(nScrollPosition==0){
+				 //$( ".seta" ).css( "display", "block" );
+				 document.getElementById("xis").style.visibility = "hidden";
+			}else{
+				 //$( ".seta" ).css( "display", "none" );
+				 document.getElementById("xis").style.visibility = "visible";
+			}
+		});
+	}
+</script>
